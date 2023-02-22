@@ -1,0 +1,3003 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/contracts/TokenContract.sol": {
+      "lastModificationDate": 1677041052763,
+      "contentHash": "bc5a0f94176b53e596c969b9ddc0ec2b",
+      "sourceName": "contracts/TokenContract.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol",
+        "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol",
+        "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol",
+        "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol",
+        "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol",
+        "@openzeppelin/contracts-upgradeable/token/ERC721/extensions/ERC721URIStorageUpgradeable.sol",
+        "@openzeppelin/contracts-upgradeable/token/ERC721/utils/ERC721HolderUpgradeable.sol",
+        "@openzeppelin/contracts/utils/Counters.sol",
+        "@openzeppelin/contracts/utils/Strings.sol",
+        "@tableland/evm/contracts/ITablelandTables.sol",
+        "@tableland/evm/contracts/ITablelandTables.sol",
+        "./SQLHelpers.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "TokenContract"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/contracts/SafeMathV2.sol": {
+      "lastModificationDate": 1676934394917,
+      "contentHash": "b8ad0b0941032cc48a825de7cee290a8",
+      "sourceName": "contracts/SafeMathV2.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "SafeMathV2"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/contracts/utils/structs/MantlePainterStructs.sol": {
+      "lastModificationDate": 1677096679740,
+      "contentHash": "abf064b647e319278fabafbdcc809d25",
+      "sourceName": "contracts/utils/structs/MantlePainterStructs.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@openzeppelin/contracts/security/ReentrancyGuard.sol": {
+      "lastModificationDate": 1676953957560,
+      "contentHash": "a8e2d1c30042f64ed89c9d4157eb6cb9",
+      "sourceName": "@openzeppelin/contracts/security/ReentrancyGuard.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ReentrancyGuard"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@openzeppelin/contracts/access/Ownable.sol": {
+      "lastModificationDate": 1676933735669,
+      "contentHash": "e436cea06129be2c73cda4b1acc848b5",
+      "sourceName": "@openzeppelin/contracts/access/Ownable.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol": {
+      "lastModificationDate": 1677032916850,
+      "contentHash": "fc5844e59776a976987884e4d9814c7d",
+      "sourceName": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/AddressUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.2"
+      ],
+      "artifacts": [
+        "Initializable"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/contracts/SQLHelpers.sol": {
+      "lastModificationDate": 1676948835862,
+      "contentHash": "bf8849fdb9b4d6b056d4032fa8d12f98",
+      "sourceName": "contracts/SQLHelpers.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/Strings.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.17"
+      ],
+      "artifacts": [
+        "SQLHelpers"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@openzeppelin/contracts/utils/Counters.sol": {
+      "lastModificationDate": 1677032916207,
+      "contentHash": "74654e3ae5d7f39555055dfe244dab7a",
+      "sourceName": "@openzeppelin/contracts/utils/Counters.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Counters"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@tableland/evm/contracts/ITablelandTables.sol": {
+      "lastModificationDate": 1677032917065,
+      "contentHash": "d6a944e3296810a3b9dcb31c5ec1a69a",
+      "sourceName": "@tableland/evm/contracts/ITablelandTables.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ITablelandController.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "ITablelandTables"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@openzeppelin/contracts/token/ERC721/ERC721.sol": {
+      "lastModificationDate": 1676933735670,
+      "contentHash": "79ff1a7eb801a525aa315fb7a679eede",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/ERC721.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721.sol",
+        "./IERC721Receiver.sol",
+        "./extensions/IERC721Metadata.sol",
+        "../../utils/Address.sol",
+        "../../utils/Context.sol",
+        "../../utils/Strings.sol",
+        "../../utils/introspection/ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@openzeppelin/contracts/utils/Strings.sol": {
+      "lastModificationDate": 1677032916925,
+      "contentHash": "396031251978f8febfd90cb62cb240ec",
+      "sourceName": "@openzeppelin/contracts/utils/Strings.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./math/Math.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Strings"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@openzeppelin/contracts/utils/Context.sol": {
+      "lastModificationDate": 1677032916205,
+      "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
+      "sourceName": "@openzeppelin/contracts/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol": {
+      "lastModificationDate": 1677032916148,
+      "contentHash": "228f256dbb21393bc9ad02648e222f74",
+      "sourceName": "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.1"
+      ],
+      "artifacts": [
+        "AddressUpgradeable"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@tableland/evm/contracts/ITablelandController.sol": {
+      "lastModificationDate": 1677032917064,
+      "contentHash": "a681c926372e299a7154fc9e94b5b3b6",
+      "sourceName": "@tableland/evm/contracts/ITablelandController.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "ITablelandController"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@openzeppelin/contracts/utils/Address.sol": {
+      "lastModificationDate": 1676933735668,
+      "contentHash": "c476b3895a94798b88a4bb97399e6dfe",
+      "sourceName": "@openzeppelin/contracts/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.1"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@openzeppelin/contracts/token/ERC721/IERC721.sol": {
+      "lastModificationDate": 1676933735670,
+      "contentHash": "ec99d946db3685a3630554aa6055bd7f",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/introspection/IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@openzeppelin/contracts/utils/introspection/ERC165.sol": {
+      "lastModificationDate": 1676933735670,
+      "contentHash": "0e7db055ce108f9da7bb6686a00287c0",
+      "sourceName": "@openzeppelin/contracts/utils/introspection/ERC165.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC165"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol": {
+      "lastModificationDate": 1677032916737,
+      "contentHash": "c22d4395e33763de693fd440c6fd10e1",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Receiver"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol": {
+      "lastModificationDate": 1676933738701,
+      "contentHash": "efbc0d15b80a74e34dbe8da0f3e879bb",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Metadata"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@openzeppelin/contracts/utils/introspection/IERC165.sol": {
+      "lastModificationDate": 1676933735670,
+      "contentHash": "03e6768535ac4da0e9756f1d8a4a018a",
+      "sourceName": "@openzeppelin/contracts/utils/introspection/IERC165.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC165"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/contracts/ERC20Token.sol": {
+      "lastModificationDate": 1676948014818,
+      "contentHash": "bba0f5164f416a9cff7ed6bde281cd89",
+      "sourceName": "contracts/ERC20Token.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "./SafeMathV2.sol",
+        "@openzeppelin/contracts/utils/Context.sol",
+        "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Token"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/contracts/IERC20.sol": {
+      "lastModificationDate": 1676934394912,
+      "contentHash": "eac6ac9f4ae613adce9586304b614d3a",
+      "sourceName": "contracts/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/contracts/hardhat-dependency-compiler/@gnosis.pm/safe-contracts/contracts/GnosisSafe.sol": {
+      "lastModificationDate": 1677037833182,
+      "contentHash": "c6ca2775ee63c671b8d572cc4fa3d5e2",
+      "sourceName": "contracts/hardhat-dependency-compiler/@gnosis.pm/safe-contracts/contracts/GnosisSafe.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@gnosis.pm/safe-contracts/contracts/GnosisSafe.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@gnosis.pm/safe-contracts/contracts/GnosisSafe.sol": {
+      "lastModificationDate": 1677032913451,
+      "contentHash": "6302a9ad4b2767251b680676d0dfa334",
+      "sourceName": "@gnosis.pm/safe-contracts/contracts/GnosisSafe.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./base/ModuleManager.sol",
+        "./base/OwnerManager.sol",
+        "./base/FallbackManager.sol",
+        "./base/GuardManager.sol",
+        "./common/EtherPaymentFallback.sol",
+        "./common/Singleton.sol",
+        "./common/SignatureDecoder.sol",
+        "./common/SecuredTokenTransfer.sol",
+        "./common/StorageAccessible.sol",
+        "./interfaces/ISignatureValidator.sol",
+        "./external/GnosisSafeMath.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.0 <0.9.0"
+      ],
+      "artifacts": [
+        "GnosisSafe"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@gnosis.pm/safe-contracts/contracts/base/ModuleManager.sol": {
+      "lastModificationDate": 1677032914195,
+      "contentHash": "90b2541c32a7644991f6ec3510dc3776",
+      "sourceName": "@gnosis.pm/safe-contracts/contracts/base/ModuleManager.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../common/Enum.sol",
+        "../common/SelfAuthorized.sol",
+        "./Executor.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.0 <0.9.0"
+      ],
+      "artifacts": [
+        "ModuleManager"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@gnosis.pm/safe-contracts/contracts/base/GuardManager.sol": {
+      "lastModificationDate": 1677032914167,
+      "contentHash": "30b3fe3c67c994d66c5965199d64d86d",
+      "sourceName": "@gnosis.pm/safe-contracts/contracts/base/GuardManager.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../common/Enum.sol",
+        "../common/SelfAuthorized.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.0 <0.9.0"
+      ],
+      "artifacts": [
+        "Guard",
+        "GuardManager"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@gnosis.pm/safe-contracts/contracts/common/SecuredTokenTransfer.sol": {
+      "lastModificationDate": 1677032914329,
+      "contentHash": "80c88034d9e09f88f6853fc707cf03c6",
+      "sourceName": "@gnosis.pm/safe-contracts/contracts/common/SecuredTokenTransfer.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.0 <0.9.0"
+      ],
+      "artifacts": [
+        "SecuredTokenTransfer"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@gnosis.pm/safe-contracts/contracts/common/StorageAccessible.sol": {
+      "lastModificationDate": 1677032914375,
+      "contentHash": "b2008c1f9b2cb3bbda6710f462ae7c1f",
+      "sourceName": "@gnosis.pm/safe-contracts/contracts/common/StorageAccessible.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.0 <0.9.0"
+      ],
+      "artifacts": [
+        "StorageAccessible"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@gnosis.pm/safe-contracts/contracts/common/EtherPaymentFallback.sol": {
+      "lastModificationDate": 1677032914318,
+      "contentHash": "566ab89634daf8e542177b1e7016971e",
+      "sourceName": "@gnosis.pm/safe-contracts/contracts/common/EtherPaymentFallback.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.0 <0.9.0"
+      ],
+      "artifacts": [
+        "EtherPaymentFallback"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@gnosis.pm/safe-contracts/contracts/base/OwnerManager.sol": {
+      "lastModificationDate": 1677032914257,
+      "contentHash": "53e497cc090cb4931ca5905d7f671cc5",
+      "sourceName": "@gnosis.pm/safe-contracts/contracts/base/OwnerManager.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../common/SelfAuthorized.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.0 <0.9.0"
+      ],
+      "artifacts": [
+        "OwnerManager"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@gnosis.pm/safe-contracts/contracts/base/FallbackManager.sol": {
+      "lastModificationDate": 1677032914154,
+      "contentHash": "de30ab56ace98b84e2a047164e06d0c5",
+      "sourceName": "@gnosis.pm/safe-contracts/contracts/base/FallbackManager.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../common/SelfAuthorized.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.0 <0.9.0"
+      ],
+      "artifacts": [
+        "FallbackManager"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@gnosis.pm/safe-contracts/contracts/common/Singleton.sol": {
+      "lastModificationDate": 1677032914364,
+      "contentHash": "334ef119459ae9a5487c6bd346752778",
+      "sourceName": "@gnosis.pm/safe-contracts/contracts/common/Singleton.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.0 <0.9.0"
+      ],
+      "artifacts": [
+        "Singleton"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@gnosis.pm/safe-contracts/contracts/interfaces/ISignatureValidator.sol": {
+      "lastModificationDate": 1677032914637,
+      "contentHash": "45be433b79d00dd9f3b8047489c3ff80",
+      "sourceName": "@gnosis.pm/safe-contracts/contracts/interfaces/ISignatureValidator.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.0 <0.9.0"
+      ],
+      "artifacts": [
+        "ISignatureValidator",
+        "ISignatureValidatorConstants"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@gnosis.pm/safe-contracts/contracts/common/SignatureDecoder.sol": {
+      "lastModificationDate": 1677032914354,
+      "contentHash": "c42a4ba77188fde1fff8281ea700f4fa",
+      "sourceName": "@gnosis.pm/safe-contracts/contracts/common/SignatureDecoder.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.0 <0.9.0"
+      ],
+      "artifacts": [
+        "SignatureDecoder"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@gnosis.pm/safe-contracts/contracts/external/GnosisSafeMath.sol": {
+      "lastModificationDate": 1677032914397,
+      "contentHash": "0b98e5ff6cd364731017082744cf5706",
+      "sourceName": "@gnosis.pm/safe-contracts/contracts/external/GnosisSafeMath.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.0 <0.9.0"
+      ],
+      "artifacts": [
+        "GnosisSafeMath"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@gnosis.pm/safe-contracts/contracts/common/Enum.sol": {
+      "lastModificationDate": 1677032914305,
+      "contentHash": "70d93d6b3e8b23f419fe3e529a43c17e",
+      "sourceName": "@gnosis.pm/safe-contracts/contracts/common/Enum.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.0 <0.9.0"
+      ],
+      "artifacts": [
+        "Enum"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@gnosis.pm/safe-contracts/contracts/common/SelfAuthorized.sol": {
+      "lastModificationDate": 1677032914342,
+      "contentHash": "4c773e803298d5521ba60d7fc06df0b3",
+      "sourceName": "@gnosis.pm/safe-contracts/contracts/common/SelfAuthorized.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.0 <0.9.0"
+      ],
+      "artifacts": [
+        "SelfAuthorized"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@gnosis.pm/safe-contracts/contracts/base/Executor.sol": {
+      "lastModificationDate": 1677032914117,
+      "contentHash": "5d439865306475654cf018596f1b1061",
+      "sourceName": "@gnosis.pm/safe-contracts/contracts/base/Executor.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../common/Enum.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.0 <0.9.0"
+      ],
+      "artifacts": [
+        "Executor"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/contracts/hardhat-dependency-compiler/@gnosis.pm/safe-contracts/contracts/proxies/GnosisSafeProxyFactory.sol": {
+      "lastModificationDate": 1677037833182,
+      "contentHash": "18c4009ae1b2cebb82b903bf22e3e62b",
+      "sourceName": "contracts/hardhat-dependency-compiler/@gnosis.pm/safe-contracts/contracts/proxies/GnosisSafeProxyFactory.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@gnosis.pm/safe-contracts/contracts/proxies/GnosisSafeProxyFactory.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@gnosis.pm/safe-contracts/contracts/proxies/GnosisSafeProxyFactory.sol": {
+      "lastModificationDate": 1677032914754,
+      "contentHash": "1c6f2708f7097b32396e492b6d545f07",
+      "sourceName": "@gnosis.pm/safe-contracts/contracts/proxies/GnosisSafeProxyFactory.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./GnosisSafeProxy.sol",
+        "./IProxyCreationCallback.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.0 <0.9.0"
+      ],
+      "artifacts": [
+        "GnosisSafeProxyFactory"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@gnosis.pm/safe-contracts/contracts/proxies/GnosisSafeProxy.sol": {
+      "lastModificationDate": 1677032914727,
+      "contentHash": "eba113f6899fe142a2081f63aded8c83",
+      "sourceName": "@gnosis.pm/safe-contracts/contracts/proxies/GnosisSafeProxy.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.0 <0.9.0"
+      ],
+      "artifacts": [
+        "GnosisSafeProxy",
+        "IProxy"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@gnosis.pm/safe-contracts/contracts/proxies/IProxyCreationCallback.sol": {
+      "lastModificationDate": 1677032914779,
+      "contentHash": "e73c0b8a985873c817469f5c6038e233",
+      "sourceName": "@gnosis.pm/safe-contracts/contracts/proxies/IProxyCreationCallback.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./GnosisSafeProxy.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.0 <0.9.0"
+      ],
+      "artifacts": [
+        "IProxyCreationCallback"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/contracts/hardhat-dependency-compiler/solmate/src/tokens/WETH.sol": {
+      "lastModificationDate": 1677037833182,
+      "contentHash": "7e0a4156d4e70eb8f6fd29a8e4b488d3",
+      "sourceName": "contracts/hardhat-dependency-compiler/solmate/src/tokens/WETH.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "solmate/src/tokens/WETH.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/solmate/src/tokens/WETH.sol": {
+      "lastModificationDate": 1677032915231,
+      "contentHash": "69e323c35e4dc91027eab887117aa765",
+      "sourceName": "solmate/src/tokens/WETH.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC20.sol",
+        "../utils/SafeTransferLib.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "WETH"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/solmate/src/utils/SafeTransferLib.sol": {
+      "lastModificationDate": 1677032915103,
+      "contentHash": "db5e8a3ee2df4fb8eb2d552a01753920",
+      "sourceName": "solmate/src/utils/SafeTransferLib.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../tokens/ERC20.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "SafeTransferLib"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/solmate/src/tokens/ERC20.sol": {
+      "lastModificationDate": 1677032914329,
+      "contentHash": "0c7c7ada139062536af09d69d96d395c",
+      "sourceName": "solmate/src/tokens/ERC20.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/contracts/utils/errors/MantlePainterErrors.sol": {
+      "lastModificationDate": 1676957384678,
+      "contentHash": "65dfb7b4265fcb7b3d6170ac69179feb",
+      "sourceName": "contracts/utils/errors/MantlePainterErrors.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/contracts/utils/events/MantlePainterEvents.sol": {
+      "lastModificationDate": 1676957364570,
+      "contentHash": "fdb4ff70cb080e9c9c99bdbba340937a",
+      "sourceName": "contracts/utils/events/MantlePainterEvents.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol": {
+      "lastModificationDate": 1677032916922,
+      "contentHash": "1453fc85149da6598faf08c46b88182d",
+      "sourceName": "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../proxy/utils/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ReentrancyGuardUpgradeable"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol": {
+      "lastModificationDate": 1677032916902,
+      "contentHash": "403ce8273abde646bff81558ddf512ad",
+      "sourceName": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/ContextUpgradeable.sol",
+        "../proxy/utils/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "OwnableUpgradeable"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol": {
+      "lastModificationDate": 1677032916913,
+      "contentHash": "cbe53d6b803c1102081e00b3a0418ea3",
+      "sourceName": "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/ContextUpgradeable.sol",
+        "../proxy/utils/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "PausableUpgradeable"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol": {
+      "lastModificationDate": 1677032916984,
+      "contentHash": "e271d7f01f6ba5cb9dbe19c49180243d",
+      "sourceName": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../interfaces/draft-IERC1822Upgradeable.sol",
+        "../ERC1967/ERC1967UpgradeUpgradeable.sol",
+        "./Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "UUPSUpgradeable"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@openzeppelin/contracts-upgradeable/token/ERC721/extensions/ERC721URIStorageUpgradeable.sol": {
+      "lastModificationDate": 1677032916586,
+      "contentHash": "351bef3ae2616e8dea21cab97b446ba1",
+      "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC721/extensions/ERC721URIStorageUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC721Upgradeable.sol",
+        "../../../proxy/utils/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721URIStorageUpgradeable"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@openzeppelin/contracts-upgradeable/token/ERC721/utils/ERC721HolderUpgradeable.sol": {
+      "lastModificationDate": 1677032916547,
+      "contentHash": "7c17712f64fafccaf270d4b39b0fe18a",
+      "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC721/utils/ERC721HolderUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC721ReceiverUpgradeable.sol",
+        "../../../proxy/utils/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721HolderUpgradeable"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@openzeppelin/contracts/utils/math/Math.sol": {
+      "lastModificationDate": 1677032916821,
+      "contentHash": "b9c58920ce74d6dc819161786112e7ee",
+      "sourceName": "@openzeppelin/contracts/utils/math/Math.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Math"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol": {
+      "lastModificationDate": 1677032916191,
+      "contentHash": "6200b84950eb05b4a92a39fd1d6e0f9b",
+      "sourceName": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../proxy/utils/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ContextUpgradeable"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@openzeppelin/contracts-upgradeable/interfaces/draft-IERC1822Upgradeable.sol": {
+      "lastModificationDate": 1677032916351,
+      "contentHash": "a6883cfd85607b16c121a02728369eb3",
+      "sourceName": "@openzeppelin/contracts-upgradeable/interfaces/draft-IERC1822Upgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC1822ProxiableUpgradeable"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol": {
+      "lastModificationDate": 1677032916462,
+      "contentHash": "d1ceeaa35b60471b1c6e50d29d70354a",
+      "sourceName": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../beacon/IBeaconUpgradeable.sol",
+        "../../interfaces/draft-IERC1822Upgradeable.sol",
+        "../../utils/AddressUpgradeable.sol",
+        "../../utils/StorageSlotUpgradeable.sol",
+        "../utils/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.2"
+      ],
+      "artifacts": [
+        "ERC1967UpgradeUpgradeable"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@openzeppelin/contracts-upgradeable/utils/StorageSlotUpgradeable.sol": {
+      "lastModificationDate": 1677032916975,
+      "contentHash": "731fafe5fdaca6e0749253ab7ce7d3b9",
+      "sourceName": "@openzeppelin/contracts-upgradeable/utils/StorageSlotUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "StorageSlotUpgradeable"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@openzeppelin/contracts-upgradeable/proxy/beacon/IBeaconUpgradeable.sol": {
+      "lastModificationDate": 1677032916693,
+      "contentHash": "21bffd733b4ca013e125a0ffe2e52254",
+      "sourceName": "@openzeppelin/contracts-upgradeable/proxy/beacon/IBeaconUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IBeaconUpgradeable"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol": {
+      "lastModificationDate": 1677032916578,
+      "contentHash": "27a1de422d2ce72e01554ec1ac9597ab",
+      "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721Upgradeable.sol",
+        "./IERC721ReceiverUpgradeable.sol",
+        "./extensions/IERC721MetadataUpgradeable.sol",
+        "../../utils/AddressUpgradeable.sol",
+        "../../utils/ContextUpgradeable.sol",
+        "../../utils/StringsUpgradeable.sol",
+        "../../utils/introspection/ERC165Upgradeable.sol",
+        "../../proxy/utils/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721Upgradeable"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@openzeppelin/contracts-upgradeable/token/ERC721/IERC721ReceiverUpgradeable.sol": {
+      "lastModificationDate": 1677032916765,
+      "contentHash": "ba28cf60b52b00d2b3a190bcdf0952bd",
+      "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC721/IERC721ReceiverUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721ReceiverUpgradeable"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@openzeppelin/contracts-upgradeable/token/ERC721/IERC721Upgradeable.sol": {
+      "lastModificationDate": 1677032916798,
+      "contentHash": "407d093831013935f7b2ab603ef3f21c",
+      "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC721/IERC721Upgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/introspection/IERC165Upgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Upgradeable"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@openzeppelin/contracts-upgradeable/utils/StringsUpgradeable.sol": {
+      "lastModificationDate": 1677032916975,
+      "contentHash": "3805d0267faeda96624b50a67ca89f08",
+      "sourceName": "@openzeppelin/contracts-upgradeable/utils/StringsUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./math/MathUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "StringsUpgradeable"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@openzeppelin/contracts-upgradeable/token/ERC721/extensions/IERC721MetadataUpgradeable.sol": {
+      "lastModificationDate": 1677032916762,
+      "contentHash": "76212ca0265501d1eb3dd1175e6afca4",
+      "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC721/extensions/IERC721MetadataUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC721Upgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721MetadataUpgradeable"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@openzeppelin/contracts-upgradeable/utils/introspection/ERC165Upgradeable.sol": {
+      "lastModificationDate": 1677032916459,
+      "contentHash": "5f2d8b81c0ff5bd2047b4846c20b998d",
+      "sourceName": "@openzeppelin/contracts-upgradeable/utils/introspection/ERC165Upgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC165Upgradeable.sol",
+        "../../proxy/utils/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC165Upgradeable"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@openzeppelin/contracts-upgradeable/utils/introspection/IERC165Upgradeable.sol": {
+      "lastModificationDate": 1677032916730,
+      "contentHash": "d6ecf203a5e72c845be9bbf2f304a289",
+      "sourceName": "@openzeppelin/contracts-upgradeable/utils/introspection/IERC165Upgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC165Upgradeable"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@openzeppelin/contracts-upgradeable/utils/math/MathUpgradeable.sol": {
+      "lastModificationDate": 1677032916879,
+      "contentHash": "469f71655418cc5f328fcc9bfdf10e9a",
+      "sourceName": "@openzeppelin/contracts-upgradeable/utils/math/MathUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MathUpgradeable"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/@tableland/evm/contracts/TablelandTables.sol": {
+      "lastModificationDate": 1677032917076,
+      "contentHash": "e03998d7f370e939486b3d2171efd4f8",
+      "sourceName": "@tableland/evm/contracts/TablelandTables.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "erc721a-upgradeable/contracts/ERC721AUpgradeable.sol",
+        "erc721a-upgradeable/contracts/extensions/ERC721AQueryableUpgradeable.sol",
+        "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol",
+        "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol",
+        "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol",
+        "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol",
+        "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol",
+        "./ITablelandTables.sol",
+        "./ITablelandController.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "TablelandTables"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/erc721a-upgradeable/contracts/extensions/ERC721AQueryableUpgradeable.sol": {
+      "lastModificationDate": 1677032913601,
+      "contentHash": "2711afae09347ee3dab9e65685b39328",
+      "sourceName": "erc721a-upgradeable/contracts/extensions/ERC721AQueryableUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721AQueryableUpgradeable.sol",
+        "../ERC721AUpgradeable.sol",
+        "../ERC721A__Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "ERC721AQueryableUpgradeable"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/erc721a-upgradeable/contracts/ERC721AUpgradeable.sol": {
+      "lastModificationDate": 1677032913822,
+      "contentHash": "f8ce3ae749d925b4eee03832f3ce8ed7",
+      "sourceName": "erc721a-upgradeable/contracts/ERC721AUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721AUpgradeable.sol",
+        "./ERC721AStorage.sol",
+        "./ERC721A__Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "ERC721AUpgradeable",
+        "ERC721A__IERC721ReceiverUpgradeable"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/erc721a-upgradeable/contracts/extensions/IERC721AQueryableUpgradeable.sol": {
+      "lastModificationDate": 1677032914092,
+      "contentHash": "5c932b9869c615239782d32a615a9137",
+      "sourceName": "erc721a-upgradeable/contracts/extensions/IERC721AQueryableUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC721AUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "IERC721AQueryableUpgradeable"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/erc721a-upgradeable/contracts/ERC721A__Initializable.sol": {
+      "lastModificationDate": 1677032913374,
+      "contentHash": "0fa43fa21f853e3f8f65edb747c92c4e",
+      "sourceName": "erc721a-upgradeable/contracts/ERC721A__Initializable.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC721A__InitializableStorage.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721A__Initializable"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/erc721a-upgradeable/contracts/ERC721AStorage.sol": {
+      "lastModificationDate": 1677032913643,
+      "contentHash": "2bebb9fb7b7e001916c833eb49ff74d3",
+      "sourceName": "erc721a-upgradeable/contracts/ERC721AStorage.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721AStorage"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/erc721a-upgradeable/contracts/IERC721AUpgradeable.sol": {
+      "lastModificationDate": 1677032914154,
+      "contentHash": "f047c91056b779f8c57cd0f6addfc6d2",
+      "sourceName": "erc721a-upgradeable/contracts/IERC721AUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "IERC721AUpgradeable"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/node_modules/erc721a-upgradeable/contracts/ERC721A__InitializableStorage.sol": {
+      "lastModificationDate": 1677032913524,
+      "contentHash": "5fabc57a19d6e51af472028bb7022279",
+      "sourceName": "erc721a-upgradeable/contracts/ERC721A__InitializableStorage.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721A__InitializableStorage"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/contracts/TablelandTables.sol": {
+      "lastModificationDate": 1676952930711,
+      "contentHash": "20bec52239911a9d5a882e8e5a126710",
+      "sourceName": "contracts/TablelandTables.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@tableland/evm/contracts/TablelandTables.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.12"
+      ],
+      "artifacts": []
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/contracts/MantlePainter.sol": {
+      "lastModificationDate": 1677096701932,
+      "contentHash": "cab9b51b2e960a23c7e2e5420775237a",
+      "sourceName": "contracts/MantlePainter.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IMantlePainter.sol",
+        "./TokenContract.sol",
+        "./SafeMathV2.sol",
+        "./utils/structs/MantlePainterStructs.sol",
+        "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol",
+        "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol",
+        "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol",
+        "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol",
+        "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol",
+        "@openzeppelin/contracts-upgradeable/token/ERC721/extensions/ERC721URIStorageUpgradeable.sol",
+        "@openzeppelin/contracts-upgradeable/token/ERC721/utils/ERC721HolderUpgradeable.sol",
+        "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "MantlePainter"
+      ]
+    },
+    "/Users/siphamandlamjoli/Documents/GitHub/mantle-painter/contracts/contracts/interfaces/IMantlePainter.sol": {
+      "lastModificationDate": 1677096733464,
+      "contentHash": "6d51e82d6668cfb463373b432375c011",
+      "sourceName": "contracts/interfaces/IMantlePainter.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 5000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "IMantlePainter"
+      ]
+    }
+  }
+}

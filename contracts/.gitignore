@@ -7,3 +7,5 @@ dist
 embarkArtifacts
 node_modules
 .env
+artificats
+cache

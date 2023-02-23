@@ -2,10 +2,14 @@ require("@nomicfoundation/hardhat-chai-matchers");
 require("@nomiclabs/hardhat-ethers");
 require("@openzeppelin/hardhat-upgrades");
 require("hardhat-dependency-compiler");
-
+require('dotenv').config({})
 module.exports = {
   networks: {
     hardhat: {},
+    "mantle-testnet": {
+      url: "https://rpc.testnet.mantle.xyz/",
+      accounts: [process.env.PRIVATE_KEY] // Uses the private key from the .env file
+    },
     local: {
       url: "http://localhost:8545",
       chainId: 31337,

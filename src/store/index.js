@@ -57,6 +57,19 @@ const store = new Vuex.Store({
         text: message,
       });
     },
+    successWithCallBack(_context, message) {
+      swal.fire({
+        position: "top-end",
+        icon: "success",
+        title: "Success",
+        showConfirmButton: true,
+        text: message.message,
+      }).then((results)=>{
+        if(results.isConfirmed){
+          message.onTap()
+        }
+      });
+    },
     warning(_context, message) {
       swal.fire("Warning", message.warning, "warning").then((result) => {
         /* Read more about isConfirmed, isDenied below */

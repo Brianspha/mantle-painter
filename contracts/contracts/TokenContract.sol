@@ -60,6 +60,7 @@ contract TokenContract is
         __Ownable_init();
         __Pausable_init();
         __ReentrancyGuard_init();
+        __ERC721_init("MantlePainter","MP");
         /*
          * The Tableland address on your current chain
          */

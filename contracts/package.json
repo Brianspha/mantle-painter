@@ -6,7 +6,8 @@
     "test": "hardhat test",
     "local": "npx local-tableland",
     "compile": "npx hardhat compile",
-    "deploy:local": "npx hardhat run --network localhost scripts/deploy-local.js"
+    "deploy:local": "npx hardhat run --network localhost scripts/deploy-local.js",
+    "deploy:mantle": "npx hardhat run --network mantle-testnet scripts/deploy-mantle.js"
   },
   "keywords": [],
   "author": "",

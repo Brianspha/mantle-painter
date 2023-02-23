@@ -95,8 +95,7 @@ export default {
     },
     paintPixel: async function () {
       let _this = this;
-      this.$store.state.isLoading = true;
-      _this.$store.state.showPixelDialog = false;
+      _this.$store.state.isLoading = true;
       if (this.$refs.form.validate()) {
         if (
           this.$store.state.currentPixel.owner.toUpperCase() ===
@@ -115,14 +114,23 @@ export default {
               .minPaintCost()
               .call();
             const color = this.$store.state.pickerColor;
-            _this.$store.state.mantleContract.methods
+            await _this.$store.state.mantleContract.methods
               .colorPixel(_this.$store.state.currentPixel.id, color)
               .send({
                 value: minCost,
                 from: _this.$store.state.userAddress,
               });
+            
             _this.$store.state.isLoading = false;
-             window.location.reload();
+            _this.$store.state.showPixelDialog = true;
+            var message = {
+              message:
+                "Successfully painted pixel",
+              onTap: () => {
+                window.location.reload();
+              },
+            };
+            this.$store.dispatch("successWithCallBack", message);
           } catch (error) {
             _this.$store.state.isLoading = false;
             _this.$store.state.showPixelDialog = true;

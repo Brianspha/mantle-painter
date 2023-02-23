@@ -46,8 +46,8 @@ contract MantlePainter is
 
     /*==========================================================Variable definition start==========================================================*/
     uint256 public transactionFees = 0;
-    uint256 public canvasMaxPixels = 784;
-    uint256 public minPaintCost = 0.01 ether;
+    uint256 public canvasMaxPixels = 1295;
+    uint256 public minPaintCost = 0.05 ether;
     TokenContract pixel;
     address[] pixelOwners;
     uint256[] pixels;

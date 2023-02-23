@@ -3,7 +3,7 @@
 
   <v-app>
     <v-app-bar app>
-      <v-app-bar-title>Mantle-Painter</v-app-bar-title>
+      <v-app-bar-title><div>Mantle-Painter</div></v-app-bar-title>
       <v-row justify="end" align="end">
         <v-btn
           width="230"
